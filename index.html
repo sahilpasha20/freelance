@@ -13,24 +13,26 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Inline Tailwind Config (REPLACES tailwind.config.js loading) -->
+    <!-- Tailwind CDN Config -->
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              lato: ["Lato", "sans-serif"],
-              playfair: ["Playfair Display", "serif"]
+      window.tailwind = {
+        config: {
+          theme: {
+            extend: {
+              fontFamily: {
+                lato: ["Lato", "sans-serif"],
+                playfair: ["Playfair Display", "serif"]
+              }
             }
           }
         }
-      }
+      };
     </script>
 
-    <!-- Tailwind CSS (CDN) -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Import Map (React, Framer Motion, Lucide) -->
+    <!-- Import Map -->
     <script type="importmap">
     {
       "imports": {
